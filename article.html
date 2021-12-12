@@ -1,0 +1,187 @@
+<html>
+  <title>MacBook</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+  margin:0;
+  height:120%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  text-decoration:none
+}
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(108, 27, 139, 0.122) 40%,rgb(32, 4, 51) 100%);
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(https://www.cnet.com/a/img/4hL6xZHrRaKkEgSsiyzclWUlo8k=/1200x630/2021/10/18/1877294a-7d41-4e23-a80f-fd4e7f9ec5bd/apple-macbook-pro-m1-and-m1-pro-2021-in-14-inch-16-inch-m18.png) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 5s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+.menu{
+  display:block;
+  width:40px;
+  height:30px;
+  border:2px solid #fff;
+  border-radius:3px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  text-decoration:none
+}
+.menu:after{
+  content:"";
+  display:block;
+  width:20px;
+  height:3px;
+  background-color: #2f0a3c;
+background-image: linear-gradient(360deg, #2f0a3c 0%, #17042c 34%);
+  position:absolute;
+  margin:0 auto;
+  top:5px;
+  left:0;
+  right:0;
+  box-shadow:0 8px, 0 16px
+}
+.logo{
+  border:2px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  margin:20px;
+  padding:0px 10px;
+  font-weight:900;
+  font-size:1.1em;
+  line-height:1;
+  box-sizing:border-box;
+  height:40px
+}
+.sides, .info{
+  flex: 0 0 auto;
+  width:50%
+}
+.info{
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(255, 255, 255, 0.2)
+}
+.info h4, .meta{
+  font-size:0.7em
+}
+.meta{
+  font-style:italic;
+}
+@keyframes grow{
+  0% { transform: scale(1) translateY(0px)}
+  50% { transform: scale(1.2) translateY(-400px)}
+}
+.content{  
+  padding:5% 10%;
+  text-align:justify
+  background-color: #2f0a3c;
+background-image: linear-gradient(360deg, #2f0a3c 10%, #17042c 34%);
+}
+.btn{
+  color:rgba(106, 30, 121, 0.212);
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-weight:600
+}
+.twtr{
+  margin-top:100px
+}.btn.twtr:after{content:"\1F426";padding-left:5px}
+    </style>
+<div class="header">
+    <div class="sides">
+      <a href="#" class="logo">MACBOOK</a>
+    </div>
+    <div class="sides"> <a href="#" class="menu"> </a></div>
+    <div class="info">
+    <h4><a href="#category">Supercharged for pros</a></h4>
+      <h1>THE NEW GENERATION MACBOOK PRO</h1>
+      <div class="meta">
+        <a  href="https://twitter.com/nodws" target="_b" class="author"></a><br>
+        By <a href="https://twitter.com/nodws" target="_b">Balin Menezes</a> on December 2, 2020
+      </div>
+    </div>
+  </div>
+  <section class="content">
+      <body>
+        <ul type="disc" style="color:#d4d3d3">
+  <li>The most powerful MacBook Pro ever is here. 
+    With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon 
+    designed for pros — you get groundbreaking performance and amazing battery life.
+     Add to that a stunning Liquid Retina XDR display, the best camera and audio ever 
+     in a Mac notebook, and all the ports you need.</li>
+      The first notebook of its kind, this
+    <li>MacBook Pro is a beast.M1 Pro and M1 Max scale the amazing M1 architecture to new heights
+     — and for the first time, they bring a system on a chip (SoC) architecture to a pro notebook.
+      Both have more CPU cores, more GPU cores, and more unified memory than M1. Along with a powerful
+       Neural Engine for supercharged machine learning and upgraded media engines with ProRes support, 
+       M1 Pro and M1 Max allow pros to do things they never could before.</li>
+       <li>M1 Pro takes the exceptional 
+       performance of the M1 architecture to a whole new level for pro users. Even the most ambitious
+       projects are easily handled with up to 10 CPU cores, up to 16 GPU cores, a 16‑core Neural Engine,
+        and dedicated encode and decode media engines that support H.264, HEVC, and ProRes codecs. M1 Max
+         is the most powerful chip ever created for a pro notebook, with 10 CPU cores, up to 32 GPU cores, 
+         and a 16-core Neural Engine.</li>
+         <li> It delivers two times faster graphics processing and double the memory 
+         bandwidth of M1 Pro. And it has a dedicated media engine for decode and two for encode — with up to
+          two times faster video encoding — and two ProRes accelerators for even higher multistream performance.
+           The new MacBook Pro is available in 14- and 16-inch models. Each can be configured with the M1 Pro or
+            M1 Max chip and offers unprecedented levels of pro performance.</li>
+            <li> So you can manipulate millions of polygons
+             in Cinema 4D, edit up to seven streams of 8K ProRes video in Final Cut Pro, or grade color in HDR on 8K 4444
+              ProRes video — all miles away from the edit bay. Ferocious performance with game‑changing battery life — that 
+              efficiency is the magic of Apple silicon. A single charge lets you compile up to four times as much code in Xcode19
+               or edit images for up to twice as long in Lightroom Classic.20 And unlike other notebooks, MacBook Pro delivers the same
+                amazing performance whether it’s plugged in or not.</li>
+                <p align="center"><a href="table.html" target="b" class="btn twtr" style="color:#d4d3d3">Compare The MAC</style></a></p>
+    <p align="center"><a href="#" class="btn twtr" style="color:#d4d3d3">ADD TO CART</style></a></p>
+  </section>
+  </body>
+  <html>

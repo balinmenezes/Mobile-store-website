@@ -1,0 +1,223 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #2f0a3c;
+background-image: linear-gradient(360deg, #2f0a3c 0%, #17042c 34%);
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+#wrapper {
+	width: 430px;
+	background: url(https://images.unsplash.com/photo-1595327656903-2f54e37ce09b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+	margin: 25px auto;
+	padding: 64px;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 15px 20px 0px #d7b8ff;
+}
+
+#wrapper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .64);
+	z-index: -1;
+}
+
+#table {
+	margin-bottom: 6em;
+}
+
+#table a {
+	text-transform: uppercase;
+	margin-right: 40px;
+	padding: 11px 4px;
+	color: #bbb;
+	cursor: pointer
+}
+
+#table a.active {
+	border-bottom: 1.5px solid #ffffff;
+	color: #fff;
+}
+
+label {
+	display: block
+}
+
+form {
+	margin-bottom: 3.3em;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	margin-left: 14px;
+	color: rgb(255, 255, 255);
+}
+
+input {
+	width: 100%;
+	background: linear-gradient(360deg, transparent, #533f6e);
+	outline: none;
+	padding: 10px 14px;
+	color: #2f0a3c;
+	border: none;
+	border-radius: 36px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	transition: background 0.5s ease-in-out;
+}
+span#showpwd {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    cursor: pointer;
+}
+input:focus {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+input[type="submit"] {
+	background: #ffffff;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+#checkbox {
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px
+}
+
+#checkbox input+.text:before {
+	content: "\f096";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 6px;
+	width: 1em;
+}
+
+#checkbox input:checked+.text:before {
+	content: "\f14a";
+	color: #fffffe;
+	animation: scalecheck 0.1s
+}
+
+#checkbox input {
+	display: none;
+}
+
+@-webkit-keyframes scalecheck {
+	0% {
+		transform: scale(0);
+	}
+	90% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.hr {
+	height: 1.4px;
+	background: #ffffff;
+	border-radius: 17px;
+	margin-bottom: 33px;
+}
+
+#froget-pass {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	margin: 0;
+	display: block;
+}
+
+@media screen and (max-width :490px) {
+	body {
+		display: table;
+		width: 100%;
+	}
+	#wrapper {
+		width: auto;
+		height: 100vh;
+		margin: 0;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media screen and (max-width :490px) {
+	#wrapper {
+		padding: 28px;
+	}
+}
+</style>
+
+<body>
+
+	<div id="wrapper">
+		<div id="table">
+			<a class="active">Sign in</a>
+			<a href="signup.html">Sign Up</a>
+		</div>
+		<div id="signin">
+			<form action="">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" id="username" autofocus>
+				</div>
+				<div class="form-group">
+					<label for="pass">Password</label>
+					<input type="password" id="pass">
+					<span id="showpwd" class="fa fa-eye-slash"></span>
+				</div>
+				<div class="form-group">
+					<label id="checkbox">
+						<input type="checkbox" checked><span class="text">Keep me signed in </span>
+					</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Sign In">
+				</div>
+			</form>
+		<div class="hr"></div>
+		<a href="#" id="froget-pass">Forget Password?</a>
+		
+    </div>
+		
+	</div>
+</body>
+
+</html>

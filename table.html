@@ -1,0 +1,153 @@
+<title>Comparision</title>
+<style>
+    html,
+body {
+height: 100%;
+}
+body {
+margin: 0;
+background-color: #2f0a3c;
+background-image: linear-gradient(360deg, #2f0a3c 0%, #17042c 34%);
+font-family: sans-serif;
+font-weight: 100;
+}
+.dropbtn{
+background-color:#55608f;
+color: #fff;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+align: center;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 20px 50px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown:hover .dropbtn {
+background-color: #818fc9;
+}
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+table {
+width: 800px;
+border-collapse: collapse;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+th,
+td {
+padding: 15px;
+background-color: rgba(255,255,255,0.2);
+color: #fff;
+text-align: center;
+}
+th {
+text-align: left;
+}
+thead {
+th {
+background-color: #55608f;
+}
+}
+tbody {
+tr {
+&:hover {
+background-color: rgba(255,255,255,0.3);
+}
+}
+td {
+position: relative;
+&:hover {
+&:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255,255,255,0.2);
+  z-index: -1;
+}
+}
+}
+}
+    </style>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th><div class="dropdown"><button class="dropbtn">MacBook Pro 13-in. (M1,2020)</button>
+          <div class="dropdown-content">
+      <a href="#">MacBook Pro 13-in. (M1,2020)</a>
+      <a href="#">MacBook Pro 14-in.(2021)</a>
+      <a href="#">MacBook Pro 16-in.(2021)</a>
+    </th></div>
+            </div>
+          <th><div class="dropdown"><button class="dropbtn">MacBook Pro 14-in.(2021)</button>
+          <div class="dropdown-content">
+            <a href="#">MacBook Pro 13-in. (M1,2020)</a>
+            <a href="#">MacBook Pro 14-in.(2021)</a>
+            <a href="#">MacBook Pro 16-in.(2021)</a>
+    </th></div></div>
+          <th><div class="dropdown"><button class="dropbtn">MacBook Pro 16-in.(2021)</button>
+          <div class="dropdown-content">
+            <a href="#">MacBook Pro 13-in. (M1,2020)</a>
+            <a href="#">MacBook Pro 14-in.(2021)</a>
+            <a href="#">MacBook Pro 16-in.(2021)</a>
+    </th></div></div>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://images.macrumors.com/t/PJemPEph0tylNgWFGNZ8o-JjfcI=/2769x/article-new/2013/09/16-inch-macbook-pro.jpg" height="150"></td>
+          <td><img src="https://images.macrumors.com/t/PJemPEph0tylNgWFGNZ8o-JjfcI=/2769x/article-new/2013/09/16-inch-macbook-pro.jpg" height="175"></td>
+          <td><img src="https://images.macrumors.com/t/PJemPEph0tylNgWFGNZ8o-JjfcI=/2769x/article-new/2013/09/16-inch-macbook-pro.jpg" height="200"></td>
+        </tr>
+        <tr>
+          <td><b>33.74 cm<b><br>(13.3″) Retina display</td>
+          <td><b>34.97 cm<b><br>(14.2″) Liquid Retina XDR display</td>
+          <td><b>41.05 cm<b><br>(16.2″) Liquid Retina XDR display</td>
+        </tr>
+        <tr>
+          <td><b>8-core</b><br>CPU</td>
+          <td><B>10-core</B>CPU</td>
+          <td><B>10-core</B>CPU</td>
+        </tr>
+        <tr>
+          <td><B>Apple M1 Chip</B></td>
+          <td><B>Apple M1 Pro chip or
+            Apple M1 Max chip</B></td>
+          <td><B>Apple M1 Pro chip or
+            Apple M1 Max chip</B></td>
+        </tr>
+        <tr>
+          <td><b>20 Hours</b><br>Battery Life</td>
+          <td><b>17 Hours</b><br>Battery Life</td>
+          <td><b>21 Hours</b><br>Battery Life</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
